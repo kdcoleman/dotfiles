@@ -1,0 +1,25 @@
+[user]
+	email = <your-email>
+	name = <your-name> 
+[init]
+	defaultBranch = main
+
+[alias]
+	m = checkout master
+	mn = checkout main
+	l = log --oneline --graph
+	s = status
+	b = branch
+	a = add .
+	f = commit --fixup
+	p = push
+	pu = push -u origin HEAD
+	rb = "!f() { \
+		git rebase -i HEAD~$1 --autosquash; \
+	      }; f" 
+	rs = restore --staged
+	sk = stash push --keep-index -u
+	sp = stash pop
+	amend = commit --amend --no-edit
+	mcommits = rev-list --count HEAD ^master #num of commits since HEAD at master
+	mncommits = rev-list --count HEAD ^main  #num of commits since HEAD at main
