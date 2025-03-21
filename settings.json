@@ -1,0 +1,13 @@
+{
+  "window.commandCenter": true,
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.removeUnusedImports": "explicit"
+  }
+}
