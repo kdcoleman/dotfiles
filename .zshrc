@@ -8,6 +8,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Mise
+export MISE_DATA_DIR="~/.local/share/mise"
+eval "$(~/.local/bin/mise activate zsh)"
+eval "$(~/.local/bin/mise install)"
+
 
 # GIT
 # Need to install fzf to use this (brew install fzf)
@@ -18,5 +23,6 @@ gch() {
 
 # ALIASES
 alias ls="ls -G"
-alias install-pkgs="nvm use && npm i" # or "nvm use && pnpm i"
-alias run-project="npm run dev:production"
+alias run-bun="bun run dev:production"
+alias run-pnpm="pnpm run dev:production"
+alias run-npm="npm run dev:production"
